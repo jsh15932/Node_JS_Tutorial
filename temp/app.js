@@ -9,6 +9,7 @@ app.get('/dynamic', function(req, res) {
     for(var i=0; i<5; i++) {
         lis = lis + '<li>coding</li>';
     }
+    var time = Date();
     var output = `<!DOCTYPE html>
     <html>
         <head>
@@ -19,7 +20,10 @@ app.get('/dynamic', function(req, res) {
         </head>
         <body>
             Hello Dynamic!
+            <ul>
             ${lis}
+            </ul>
+            ${time}
         </body>
     </html>`
     res.send(output);

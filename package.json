@@ -4,6 +4,7 @@
   "description": "",
   "main": "hello.js",
   "dependencies": {
+    "jade": "^1.11.0",
     "sample": "0.0.2",
     "underscore": "^1.9.1"
   },
