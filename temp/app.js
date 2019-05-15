@@ -8,10 +8,14 @@ app.get('/form', function(req, res) {
     res.render('form');
 });
 app.get('/form_receiver', function(req, res) {
+    res.send('Hello, GET');
     var title = req.query.title;
     var description = req.query.description;
     res.send(title + ',' + description);
 });
+app.post('/form_receiver', function(req, res) {
+    res.send('Hello, POST');
+})
 app.get('/topic/:id', function(req, res) {
     var topics = [
         'JavaScript is...',
