@@ -5,6 +5,7 @@
   "main": "hello.js",
   "dependencies": {
     "jade": "^1.11.0",
+    "orientjs": "^3.0.5",
     "sample": "0.0.2",
     "underscore": "^1.9.1"
   },
